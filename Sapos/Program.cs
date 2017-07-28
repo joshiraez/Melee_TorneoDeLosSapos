@@ -10,6 +10,19 @@ namespace Sapos
     {
         static void Main(string[] args)
         {
+            Partida partida;
+
+            partida = new Partida();
+
+            while (!partida.comprobarGanador())
+            {
+                partida.matarPersonaje();
+            }
+
+            Console.Write("Pulsa intro para salir...");
+            Console.ReadLine();
         }
+
+
     }
 }
